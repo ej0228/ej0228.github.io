@@ -1,0 +1,169 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    background-color: #f6e7e0; /* Soft Nude */
+    color: #a37c74; /* Rosewood */
+    font-family: 'Noto Serif KR', serif;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #f4d1cc; /* Soft Pink */
+    border-bottom: 2px solid #e7c9a9; /* Champagne Gold */
+    z-index: 100;
+}
+
+header .inner {
+    width: 1200px;
+    height: 80px;
+    margin: 0 auto;
+}
+
+header h1 {
+    width: 115px;
+    height: 30px;
+    float: left;
+    margin-top: 25px;
+}
+
+#headnav {
+    float: right;
+}
+
+#headnav .mainMenu {
+    width: 130px;
+    float: left;
+    text-align: center;
+    line-height: 80px;
+}
+
+#headnav .mainMenu a {
+    display: block;
+    color: #a37c74;
+    font-weight: 700;
+    transition: color 0.3s;
+}
+
+#headnav ul > .mainMenu:hover > a {
+    color: #e7c9a9; /* Champagne Gold */
+}
+
+#headnav .subMenu {
+    width: 130px;
+    height: 216px;
+    color: #a37c74;
+    margin: 10px 0;
+    border-right: 1px dashed #e7c9a9;
+    background-color: #f4d1cc;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+#headnav .mainMenu:first-child .subMenu {
+    border-left: 1px dashed #e7c9a9;
+}
+
+#headnav .subMenu li a {
+    display: block;
+    height: 36px;
+    line-height: 36px;
+    text-align: left;
+    text-indent: 10px;
+    font-size: 14px;
+    color: #a37c74;
+    transition: all 0.3s;
+}
+
+#headnav .subMenu li a:hover {
+    background-color: #e7c9a9; /* Champagne Gold */
+    color: #fff;
+}
+
+header::before {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #e7c9a9;
+    position: absolute;
+    top: 78px;
+    left: 0;
+}
+
+#main {
+    padding-top: 80px;
+    text-align: center;
+}
+
+#main img {
+    width: 100%;
+}
+
+/* 어사이드 */
+aside {
+    position: fixed;
+    top: 0;
+    right: -220px;
+    width: 220px;
+    height: 100%;
+    padding: 20px;
+    background: #f4d1cc; /* Soft Pink */
+    border-left: 1px solid #e7c9a9;
+    z-index: 90;
+}
+
+aside #asidenav {
+    margin: 20px;
+}
+
+aside #asidenav a {
+    display: block;
+    height: 36px;
+    border: 1px solid #e7c9a9;
+    text-align: center;
+    margin-bottom: 5px;
+    line-height: 36px;
+    color: #a37c74;
+    transition: all 0.3s;
+}
+
+aside #asidenav a:hover {
+    background: #a37c74;
+    color: #fff;
+}
+
+aside button {
+    display: block;
+    width: 52px;
+    height: 132px;
+    position: absolute;
+    top: 150px;
+    left: -52px;
+    background-color: #f6e7e0; /* Soft Nude */
+    border: 1px solid #e7c9a9;
+    border-right: 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+aside button:hover {
+    background-color: #e7c9a9;
+}

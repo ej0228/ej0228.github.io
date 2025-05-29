@@ -1,0 +1,376 @@
+@charset "utf-8";
+
+
+/* reset */
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+    font-family: gamja flower;
+}
+
+
+ul {
+
+    list-style: none;
+}
+
+a {
+
+    text-decoration: none;
+    /*밑줄 안그어지게 해줌*/
+
+    color: inherit;
+
+    /* inherit 부모속성 적용 */
+
+}
+
+
+body {
+
+    font-size: 16px;
+
+    font-family: "나눔고딕", "Nanum gothic", sans-serif;
+
+    color: #333;
+
+}
+
+
+/* 헤더 */
+
+.header {
+
+    width: 1140px;
+
+    height: 90px;
+
+    margin: 0 auto;
+    /*auto 왼쪽 오른쪽은 자동으로 맞춰진다*/
+
+    /* background-color: #ddd; */
+
+}
+
+
+.header h1 {
+
+    float: left;
+
+    padding-top: 10px;
+    /* 90-34(이미지높이)=56/2=28 */
+
+    margin-right: 25px;
+
+}
+
+
+
+.header h2 {
+
+
+    float: left;
+
+    line-height: 90px;
+    /*라인 높이를 90으로 잡아서 정 중앙에 글자가 올 수 있게*/
+
+    font-size: 30px;
+    /*h2 글자크기에 20을 더 줌*/
+
+}
+
+
+.header .menu {
+    /*메뉴 전체는 오른쪽으로 붙이고 */
+
+    float: right;
+
+}
+
+
+.header .menu li {
+    /*오른쪽 정렬 된 전체 메뉴 중에서 li 들은 왼쪽정렬로 일렬로 나오게 붙임*/
+
+    float: left;
+
+    margin-left: 40px;
+
+    line-height: 90px;
+    font-size: 20px;
+
+}
+
+
+.header .menu li a:hover {
+
+    color: blue;
+
+}
+
+
+/* 메인비주얼 */
+
+
+.section1 {
+    margin-bottom: 150px;
+    width: auto;
+    height: 500px;
+
+    /* background-image: url(./img/pc-cover-main.jpg);
+
+background-repeat: no-repeat; /이미지가 작으면 반복되는데 그거 하지 마라
+
+background-position: center top; 위쪽으로 붙고 가운데*/
+
+    background: url(./img/bomoon_index.png ) no-repeat center top;
+
+
+    /* 박스를 꽉채운다 이미지가 잘린다 */
+
+}
+
+table {
+    width : 100%;
+    height: auto;
+
+}
+
+th{
+    border: #000;
+    background-color: rgb(238, 223, 14);
+    color: #534a4a;
+}
+
+th , td {
+    border-collapse: collapse;
+    border: 1px solid #000;
+    text-align: center;
+   
+    
+}
+
+.intro2 td {
+    text-align: left ;
+}
+
+.section1 b {
+
+    display: block;
+
+    padding: 95px 0px 15px;
+
+    color: #fff;
+    text-shadow: 3px 1px 2px #3D9C06;
+
+    text-align: center;
+
+    font-size: 75px;
+
+}
+
+.section1>p {
+    /*section1에 바로 밑에있는(= '>') p만 해당*/
+
+    color: #fff;
+
+    text-align: center;
+
+    padding-bottom: 75px;
+
+    font-size: 25px;
+
+}
+
+
+.section1 .container {
+
+    width: 1140px;
+
+    margin: 0 auto;
+    /*위아래는 0이고, 정렬은 자동으로*/
+
+    overflow: hidden;
+
+}
+
+
+.section1 .container .quick {
+
+    float: left;
+
+    width: 270px;
+
+    height: 270px;
+
+    background-color: white;
+
+    margin-right: 20px;
+
+    border-radius: 20px;
+
+    margin-top: 120px;
+
+   
+}
+
+
+.section1 .container .last {
+
+    margin-right: 0px;
+    /*해줌으로써 오른쪽 마진 20 때문에 밀려서 다음칸으로 떨어진 채용안내가 안 밀리고 옆에 붙는다*/
+
+}
+
+.section1 .quick h3 {
+
+    margin: 55px 30px 30px 30px;
+
+    font-size: 28px;
+
+   
+
+    background: url(../img/arrow.jpg) no-repeat right;
+
+    /* 주의: 앞에 background-repeat , background-position 등 주석처리할것 */
+
+}
+
+
+.section1 .quick p {
+
+    margin: 0 30px;
+
+    font-size: 18px;
+
+    letter-spacing: -1px;
+
+
+}
+
+
+
+/*#quick1 {
+    background-image: url(../img/봄.png);
+}
+
+/* 섹션2 */
+
+.section2 {
+
+    width: 1140px;
+
+    margin: 0 auto;
+
+}
+
+
+.section2>div {
+
+    float: left;
+
+    width: 480px;
+
+    padding: 80px 0;
+
+    box-sizing: border-box;
+
+    background-repeat: no-repeat;
+
+    background-position: right center;
+
+}
+
+.section2 h3 {
+
+    font-size: 28px;
+
+    padding-bottom: 15px;
+    background-position: right;
+
+}
+
+.section2 p {
+    padding-right: 100px;
+}
+
+.section2 .intro1 {
+
+    border: #d19191;
+
+    margin-left: 25px;
+}
+
+
+
+
+.section2 .intro2 {
+
+
+    margin-left: 25px;
+    float: none;
+    
+}
+
+
+.section2 .intro3 {
+    margin-top: -800px;
+    float: right;
+    margin-right: 80px;
+}
+
+/*서브메뉴 추가*/
+
+.menu>li>a {
+    display: block;
+}
+
+.submenu {
+
+    height: 0;
+
+    overflow: hidden;
+    /* 숨기기 */
+
+    transition-duration: 0.5s;
+
+    -moz-transition-duration: 0.5s;
+
+    -webkit-transition-duration: 0.5s;
+
+    -ms-transition-duration: 0.5s;
+
+}
+
+.submenu li a {
+
+    display: block;
+
+    background-color: #999;
+
+    text-align: center;
+
+    line-height: 40px;
+
+    border-bottom: 1px solid #d19191;
+
+    color: #000;
+
+}
+
+.submenu li a:hover {
+
+    background-color: yellow;
+
+    color: pink;
+
+}
+
+
+.nav>li>a:hover+.submenu {
+
+    height: 164px;
+
+}
